@@ -8,14 +8,18 @@ import { LoginServiceService } from '../service/login-service.service';
 })
 export class LoginComponent implements OnInit {
 
-  usuario ={login:'', senha:''};
 
 
-  constructor(private loginService : LoginServiceService ){ }
 
+  usuario = {login: '',senha: ''};
+
+    constructor(private loginService: LoginServiceService){
+
+  }
+  //Adcionando ação ao botão
   public login(){
     this.loginService.login(this.usuario);
-	  }
+  }
 
 
   ngOnInit(): void {

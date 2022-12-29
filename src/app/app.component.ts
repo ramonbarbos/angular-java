@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { LoginServiceService } from './service/login-service.service';
 
 @Component({
@@ -9,13 +10,20 @@ import { LoginServiceService } from './service/login-service.service';
 export class AppComponent {
   title = 'angular-java';
 
-  usuario = {login: '', senha: ''};
+  constructor(private router : Router ){ }
 
-  constructor(private loginService : LoginServiceService){ }
+  ngOnInit(): void {
 
-  public login(): void{
-    this.loginService.login(this.usuario);
-	  }
+    if(localStorage.getItem('token') == null){
+      this.router.navigate(['login']);
+    }
+  }
 
+  public sair(){
+    localStorage.clear();
+    console.info("Desconectado")
+    this.router.navigate(['login'])
+    alert("Desconectado")
+  }
 
 }
