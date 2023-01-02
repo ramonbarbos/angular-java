@@ -12,11 +12,14 @@ import { ModuleWithProviders } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { HttpInterceptorModule } from './service/header-interceptor.service';
+import { UsuarioComponent } from './componente/usuario/usuario/usuario.component';
+
 
 export const appRouts: Routes = [
   {path : 'home', component : HomeComponent},
   {path : 'login', component : LoginComponent},
-  {path : '', component : LoginComponent} //definindo tela padrão
+  {path : '', component : LoginComponent}, //definindo tela padrão
+  {path: 'usuarioList', component: UsuarioComponent}
 
 ];
 
@@ -31,6 +34,7 @@ export const routes : ModuleWithProviders<any>  = RouterModule.forRoot(appRouts)
     AppComponent,
     HomeComponent,
     LoginComponent,
+    UsuarioComponent,
 
   ],
   imports: [

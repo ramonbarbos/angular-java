@@ -24,19 +24,13 @@
               "src/assets"
             ],
             "styles": [
-
-
               "node_modules/bootstrap/dist/css/bootstrap.css",
-
               "src/styles.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
-
               "node_modules/popper.js/dist/umd/popper.js",
-
               "node_modules/bootstrap/dist/js/bootstrap.js"
-
             ]
           },
           "configurations": {
@@ -130,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-java"
+    }
+  },
+  "defaultProject": "angular-java",
+  "cli": {
+    "analytics": "46577966-0f8a-4894-8872-8bc12c72e9e1"
+  }
 }
