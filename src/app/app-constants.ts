@@ -4,6 +4,6 @@ export class AppConstants {
 
 	public static get baselogin(): string {return this.baseServidor + 'restfulTeste/login'};
 
-	public static get baseUrl(): string {return this.baseServidor + 'restfulTeste/home/'};
+	public static get baseUrl(): string {return this.baseServidor + 'restfulTeste/usuario/'};
 
 }

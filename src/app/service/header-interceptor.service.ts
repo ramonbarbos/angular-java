@@ -25,8 +25,8 @@ export class HeaderInterceptorService implements HttpInterceptor {
       return next.handle(req);
 
     }
-
     throw new Error('Method not implemented.');
+   
   }
 }
 

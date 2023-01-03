@@ -19,7 +19,7 @@ export const appRouts: Routes = [
   {path : 'home', component : HomeComponent},
   {path : 'login', component : LoginComponent},
   {path : '', component : LoginComponent}, //definindo tela padrão
-  {path: 'usuarioList', component: UsuarioComponent}
+  {path: 'userList', component: UsuarioComponent}
 
 ];
 
